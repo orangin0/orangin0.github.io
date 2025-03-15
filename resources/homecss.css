@@ -1,4 +1,8 @@
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 @font-face {
@@ -6,7 +10,17 @@
     src: url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Gloria+Hallelujah&family=Monoton&display=swap');
 }
 
+nav {
+  font-family: "Gloria Hallelujah";
+  color: purple;
+  text-align: center;
+  background-color: orange;
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  align-items: center; 
 
+}
   
   #BAGGIN {
     font-family: "Monoton";
@@ -17,6 +31,12 @@
     word-spacing: 0.2em;
     letter-spacing: 0.15em;
     text-shadow: 2px 2px 2px black;
+    animation: fadeIn 1s ease-in-out; /* Applies the 'fadeIn' animation */
+
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }  /* Start with opacity 0 (invisible) */
+    100% { opacity: 1; } /* End with opacity 1 (fully visible) */
   }
 
   nav {
@@ -28,27 +48,48 @@
   .fascinate-inline{
     font-family: "Fascinate Inline";
   }
-
+body {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  background-image: url("resources/brooklyn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
   #mainTitle {
     color: #770996;
     font-size: 65px;
     text-shadow: 2px 2px 2px black;
     text-transform: uppercase;
     text-align: center;
+    
 
      
   }
-
-
  #Gino {
     align-content: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border-style: solid;
+    border-color: #770996;
+    border-width: 5px;
+    border-radius: 10px;
   }
 p {
     text-align: center;
     font-size: 20px;
     font-family: "Gloria Hallelujah";
     color: #002D72;
+}
+h3 {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Gloria Hallelujah";
+    color: #002D72;
+}
+ul {
+  font-size: 20px;
+  width: 30%; /* Or any desired width */
+  margin: 0 auto; /* Centers horizontally */
+  list-style-type: disc; /* Optional:  Re-enable bullet points if they were removed */
 }
